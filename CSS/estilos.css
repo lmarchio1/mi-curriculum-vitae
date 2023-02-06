@@ -58,3 +58,8 @@ td {
 tr:nth-child(even){
     background-color: #e6ccb2;
 }
+
+.Educacion {
+    text-align: center;
+
+}
