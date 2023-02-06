@@ -6,8 +6,3 @@ $('#show-more').click(function(){
 	$(this).hide();
 });
 
-$('#show-less').click(function(){
-	$('#show-more-content').hide();
-	$('#show-more').show();
-	$(this).hide();
-});
