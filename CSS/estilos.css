@@ -69,6 +69,7 @@ tr:nth-child(even){
 
 
 form {
+    background-color: #d4a373;
     width: auto;
     margin: auto;
     padding: 20px;
@@ -93,7 +94,7 @@ form {
   
   input[type="submit"] {
     margin-top: 20px;
-    background-color: blue;
+    background-color: #ae2012;
     color: white;
     padding: 10px 20px;
     border: none;
