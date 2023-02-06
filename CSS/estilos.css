@@ -99,5 +99,9 @@ form {
 
  .mensaje{
     background-color: #9b2226;
+    width: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
     color: white;
  }
