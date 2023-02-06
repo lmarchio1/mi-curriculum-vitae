@@ -24,6 +24,7 @@
     <hr>
     <br>
 
+    <div id="form-box">
     <form>
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required placeholder="Complete con sus datos"><br><br>
@@ -37,8 +38,31 @@
         <label for="mensaje">Dejar mensaje:</label>
         <textarea id="mensaje" name="mensaje"></textarea><br><br>
         
-        <input type="submit" value="Enviar">
+        <button type="submit" id="submit-button">Enviar</button>
       </form>
+    </div>
+
+    <div class="mensaje" id="message2"></div>
+
+
+      <script>
+
+    document.getElementById("submit-button").addEventListener("click", function(event) {
+    event.preventDefault();
+    var name = document.getElementById("nombre").value;
+    var lastname = document.getElementById("apellido").value;
+    var email = document.getElementById("email").value;
+    if (name === "" || lastname === "" || email === "") {
+    document.getElementById("message2").innerHTML = "Por favor, completa todos los campos requeridos";
+    } else {
+    var message = document.getElementById("message2").value;
+    document.getElementById("message2").innerHTML = "Gracias por completar el formulario, " + name + " " + lastname
+    }
+    });
+
+
+
+      </script>
 
 </body>
 </html>
