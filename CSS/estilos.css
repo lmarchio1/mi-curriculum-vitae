@@ -40,11 +40,14 @@ img{
     margin: 10px;
 }
 
+
 table, th, td {
+    width: auto;
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
 }
+
 
 th{
     

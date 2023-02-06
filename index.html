@@ -23,9 +23,9 @@
     <a
       href="https://www.linkedin.com/in/leandro-marchioni-6a1986129/?originalSubdomain=ar"
       target="_blank"
-      >LinkedIn</a
-    >
+      >LinkedIn</a>
 
+    <br>
     <h2>Datos Personales</h2>
     <hr />
     <p><ins><b>Nombre y Apellido:</b></ins> Leandro Gabriel Marchioni</p>
@@ -45,6 +45,7 @@
       <ins><b>Email:</b></ins>
       <a href="mailto:lmarchio1@hotmail.com">lmarchio1@hotmail.com</a></p>
     <p><ins><b>CUIT:</b></ins> 20-342326565-0</p>
+    <br>
 
     <h2>Objetivo</h2>
     <hr />
@@ -73,8 +74,10 @@
     <h2>Experiencia Laboral</h2>
     <hr />
 
-    <button onclick="mostrarOcultar('educacion')">Mostrar Educación</button>
-    <span id="educacion" class="section" style="display: none">
+    <button id="showButton">Mostrar Experiencia </button>
+    <button id="hideButton" style="display: none;"> Ocultar Experiencia </button>
+    <span id="info" class="section" style="display: none">
+
       <h3>Analista Contable-Operaciones Comerciales</h3>
       <h4>Banco de la Provincia de Buenos Aires | Dic 2020 - Actualidad.</h4>
       <ul>
@@ -180,7 +183,7 @@
 
     <table>
       <tr>
-        <th>Paquete Office</th>
+        <th>Pack Office</th>
         <th>Basico</th>
         <th>Intermedio</th>
         <th>Avanzado</th>
@@ -199,7 +202,7 @@
         <td>x</td>
       </tr>
       <tr>
-        <td>Power Point</td>
+        <td>PowerPoint</td>
         <td>-</td>
         <td>x</td>
         <td>-</td>
@@ -212,14 +215,22 @@
       </tr>
     </table>
     <script>
-      function mostrarOcultar(id) {
-        var seccion = document.getElementById(id);
-        if (seccion.style.display === "none") {
-          seccion.style.display = "block";
-        } else {
-          seccion.style.display = "none";
-        }
-      }
+      const showButton = document.getElementById("showButton");
+      const hideButton = document.getElementById("hideButton");
+      const info = document.getElementById("info");
+
+    showButton.addEventListener("click", function() {
+    info.style.display = "block";
+    showButton.style.display = "none";
+    hideButton.style.display = "inline-block";
+    });
+
+    hideButton.addEventListener("click", function() {
+    info.style.display = "none";
+    showButton.style.display = "inline-block";
+    hideButton.style.display = "none";
+    });
+
     </script>
   </body>
 </html>
